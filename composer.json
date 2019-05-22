@@ -1,8 +1,8 @@
 {
-  "name": "opencode/contracts",
-  "description": "The Opencode Contracts package",
-  "homepage": "https://github.com/alvesdouglaz/opencode-contracts",
-  "keywords": [ "umbrella",  "backfront", "skelleton", "opencode", "contracts"],
+  "name": "opencode/support",
+  "description": "The Opencode support package",
+  "homepage": "https://github.com/alvesdouglaz/opencode-support",
+  "keywords": [ "umbrella",  "backfront", "skelleton", "opencode", "support"],
   "license": "Apache-2.0",
   "authors": [
     {
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Opencode\\Contracts\\": ""
+      "Opencode\\Support\\": ""
     }
   }
 }
