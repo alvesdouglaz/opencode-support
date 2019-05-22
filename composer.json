@@ -1,0 +1,26 @@
+{
+  "name": "opencode/contracts",
+  "description": "The Opencode Contracts package",
+  "homepage": "https://github.com/alvesdouglaz/opencode-contracts",
+  "keywords": [ "umbrella",  "backfront", "skelleton", "opencode", "contracts"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Douglas Alves",
+      "email": "alves.douglaz@gmail.com",
+      "homepage": "http://alvesdouglas.com.br/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Opencode\\Contracts\\": ""
+    }
+  }
+}
