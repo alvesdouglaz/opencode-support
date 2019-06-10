@@ -22,8 +22,62 @@ namespace Opencode\Support\Auth\Access
      * @author      Douglas Alves <https://github.com/alvesdouglaz/>
      * @since       1.0.0
      */
-    abstract class ResourceAcl implements ResourceAclContract
+    class ResourceAcl implements ResourceAclContract
     {
+        /** @var string*/
         private $name;
+
+        /** @var string*/
+        private $owner;
+
+        /**
+         * ResourceAcl constructor.
+         *
+         * @param string|null $name
+         * @param string|null $owner
+         */
+        public function __construct(string $name = null, string $owner = null)
+        {
+            $this->name = $name;
+            $this->owner = $owner;
+
+            return $this;
+        }
+
+        /**
+         * @return string
+         */
+        public function getName() : string
+        {
+            return $this->name;
+        }
+
+        /**
+         * @param string $name
+         * @return ResourceAcl
+         */
+        public function setName(string $name) : ResourceAcl
+        {
+            $this->name = $name;
+            return $this;
+        }
+
+        /**
+         * @return string
+         */
+        public function getOwner() : string
+        {
+            return $this->owner;
+        }
+
+        /**
+         * @param string $owner
+         * @return ResourceAcl
+         */
+        public function setOwner(string $owner): ResourceAcl
+        {
+            $this->owner = $owner;
+            return $this;
+        }
     }
 }

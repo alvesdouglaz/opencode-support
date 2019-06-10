@@ -25,5 +25,37 @@ namespace Opencode\Support\Auth\Access
     abstract class CapabilityAcl implements CapabilityAclContract
     {
         private $name;
+
+        /**
+         * CapabilityAcl constructor.
+         *
+         * @param string|null $name
+         */
+        public function __construct(string $name = null)
+        {
+            $this->name = $name;
+            return $this;
+        }
+
+        /**
+         * Return the capability name
+         *
+         * @return string
+         */
+        public function getName(): string
+        {
+            return $this->name;
+        }
+
+        /**
+         * Set the capability name
+         * @param string $name
+         * @return CapabilityAcl
+         */
+        public function setName(string $name) : CapabilityAcl
+        {
+            $this->name = $name;
+            return $this;
+        }
     }
 }
